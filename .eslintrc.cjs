@@ -1,3 +1,5 @@
+const { rules } = require('eslint-plugin-vue')
+
 module.exports = {
   env: {
     browser: true,
@@ -12,5 +14,8 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module',
+  },
+  rules: {
+    'vue-multi-word-component-names': 0,
   },
 }
